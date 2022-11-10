@@ -21,10 +21,16 @@
                     </thead>
                     <tbody>
                         @foreach ($workshops as $workshops)
-                            <tr>
-                                <td>{{ $workshops->workshop_name }}</td>
-                                <td>{{ $workshops->workshop_details }}</td>
-                            </tr>
+                            @if ($workshops)
+                                <tr>
+                                    <td>{{ $workshops->workshop_name }}</td>
+                                    <td>{{ $workshops->workshop_details }}</td>
+                                </tr>
+                            @else
+                                <tr>
+                                    <td>You didn't have any Workshop.</td>
+                                </tr>
+                            @endif
                         @endforeach
                     </tbody>
                 </table>

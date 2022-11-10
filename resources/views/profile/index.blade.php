@@ -56,24 +56,6 @@
                     </div>
                 @endforeach
             </form>
-            {{-- <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($workshops as $workshops)
-                            <tr>
-                                <td>{{ $workshops->workshop_name }}</td>
-                                <td>{{ $workshops->workshop_details }}</td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div> --}}
         </div>
     </div>
 @endsection

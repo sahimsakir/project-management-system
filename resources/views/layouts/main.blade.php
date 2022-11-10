@@ -78,8 +78,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Projects:</h6>
-                        <a class="collapse-item" href="utilities-color.html">All Projects</a>
-                        <a class="collapse-item" href="utilities-border.html">Add New Projects</a>
+                        <a class="collapse-item" href="{{ route('project.index') }}">All Projects</a>
+                        <a class="collapse-item" href="{{ route('project.create') }}">Add New Projects</a>
                     </div>
                 </div>
             </li>
@@ -206,12 +206,6 @@
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('assets/js/sb-admin-2.min.js') }}"></script>
 
-    <!-- Page level plugins -->
-    <script src="{{ asset('assets/vendor/chart.js/Chart.min.js') }}"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="{{ asset('assets/js/demo/chart-area-demo.js') }}"></script>
-    <script src="{{ asset('assets/js/demo/chart-pie-demo.js') }}"></script>
 
 </body>
 
