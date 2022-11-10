@@ -18,6 +18,7 @@
                             <th>Name</th>
                             <th>Details</th>
                             <th>Status</th>
+                            <th>Created By</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,6 +27,7 @@
                                 <td>{{ $workshops->workshop_name }}</td>
                                 <td>{{ $workshops->workshop_details }}</td>
                                 <td>{{ $workshops->status_name }}</td>
+                                <td>{{ $workshops->username }}</td>
                             </tr>
                         @endforeach
                     </tbody>

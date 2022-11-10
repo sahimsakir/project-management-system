@@ -18,7 +18,8 @@ class WorkshopController extends Controller
     {
         //
         $workshops = Workshop::join('statuses','statuses.id','=','workshops.status_id')
-        ->get(['workshops.id','workshops.workshop_name','workshops.workshop_details','statuses.status_name']);
+        ->join('users','users.id','=','workshops.user_id')
+        ->get(['workshops.id','workshops.workshop_name','workshops.workshop_details','statuses.status_name', 'users.username']);
         return view('workshop.index',['workshops'=>$workshops]);
     }
 

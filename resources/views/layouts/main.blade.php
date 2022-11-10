@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Workshop Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="{{ route('home') }}">
+                <a class="nav-link collapsed" href="{{ route('workshop') }}">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>All Workshops</span>
                 </a>

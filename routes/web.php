@@ -26,6 +26,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
+Route::group(['middleware'=>['auth']], function(){
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/workshop', [WorkshopController::class, 'index'])->name('workshop');
+});
